@@ -1,0 +1,102 @@
+/* Navigation bar */
+#navbar {
+  flex-direction: column;
+}
+#navbar img {
+  height: 40px;
+  /* margin: -10px 0px; */
+}
+#navbar ul li a {
+  font-size: 10px;
+  margin: -12px 10px;
+}
+/*Home part*/
+#home {
+  height: 350px;
+}
+#home h1 {
+  font-size: 2rem;
+  margin-top: 130px;
+  margin-left: 14px;
+  margin-bottom: -28px;
+}
+#home::before {
+  height: 400px;
+}
+#home p {
+  font-size: 10px;
+}
+#home .btn {
+  padding: 6px 30px;
+  margin-top: 33px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 200px;
+  background-color: #e91414a9;
+  font-size: 0.5em;
+  border-radius: 23px;
+  border: 2px solid rgba(0, 0, 0, 0.219);
+}
+/*services*/
+#services-container h1 {
+  font-size: 22px;
+}
+#services .box img {
+  height: 60px;
+}
+#services .box {
+  margin: 15px 20px;
+  padding: 7px 0px;
+}
+.box {
+  height: 300px;
+}
+.center {
+  font-size: 12px;
+}
+#services {
+  display: inline;
+}
+/*client section*/
+#client-section h1 {
+  font-size: 25px;
+  padding-top: 9px;
+
+  padding-bottom: 20px;
+}
+
+.client-item img {
+  height: 40px;
+  margin: 0px 20px;
+}
+#client-section {
+  height: 170px;
+  margin-bottom: 40px;
+}
+
+#client-section::before {
+  height: 20%;
+}
+/*contact us*/
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 0.3rem;
+  margin: 15px 0px;
+}
+#contact h1 {
+  font-size: 1rem;
+}
+.contact-box label{
+    font-size: 10px;
+    
+  }
+.form-group input {
+    font-size: 10px;
+    width: 130px;
+
+}
+
+.contact-box{
+    margin-right: 35px;
+}

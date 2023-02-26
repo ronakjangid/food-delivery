@@ -1,0 +1,272 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* CSS variables */
+
+:root {
+  --navbar-height: 50px; /*This is optional*/
+}
+
+/* Navigation bar styling starts from here*/
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Navigation bar logo and image */
+
+#logo {
+  margin: 12px 23px;
+}
+
+#logo img {
+  margin: 0px 13px;
+  height: 4rem;
+}
+
+/* Navbar list styling  */
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  /*yeh ek psudo selector hai*/
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* overflow: auto; */
+  height: 90px;
+  width: 100%;
+  z-index: -1; /*Yeh content ko color ke upar lane ke kaam aata hai*/
+  opacity: 1; /*Yeh color contrast ko adjust karta hai*/
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+  display: block;
+  margin: 20px 15px;
+  padding: 9px 12px;
+  text-decoration: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 17px;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Navbar styling ends here*/
+
+/* Home section starts from here  */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url("./Backgrounds/06.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 70%;
+  top: 0px;
+  /* overflow: auto; */
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#home h1 {
+  color: white;
+  padding: 60px 0px;
+  font-size: 7em;
+}
+
+#home p {
+  color: white;
+  padding: 4px;
+  font-size: 1.5em;
+}
+
+#home .btn {
+  padding: 10px 43px;
+
+  margin-top: 74px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 200px;
+  background-color: #e91414a9;
+  font-size: 1.5em;
+  border-radius: 23px;
+  border: 2px solid rgba(0, 0, 0, 0.219);
+
+}
+
+#home .btn:hover {
+  background-color: rgb(28, 95, 28);
+  cursor:pointer;
+}
+
+/* Services part starts from here */
+
+#services {
+  display: flex;
+}
+#services .box {
+  /* height: 20px; */
+  border: 5px solid brown;
+  margin: 50px 32px;
+padding: 20px 0px;
+  background-color: #5c5c5c2b;
+  border-radius: 23px;
+}
+#services .box img {
+  height:  250px;
+  display: block;
+  margin: auto;
+}
+
+#services .center {
+  text-align: center;
+  padding: 10px;
+}
+
+.pink {
+  text-align: center;
+  height: 33px;
+  
+}
+
+#services-container h1 {
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/*Clients section starts from here*/
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#client-section{
+  height: 200px;
+  margin-bottom: 75px;
+}
+
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url("../Photos/Clients/main2.jpg") no-repeat center center/cover;
+   width: 100%;
+   height: 25%;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+#client-section h1{
+  font-size: 40px;
+  padding-top: 10px;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+
+.client-item img{
+  height: 90px;
+  margin: 0px 40px;
+
+}
+
+
+/* Client part ends here */
+
+/* Contact part starts from here*/
+
+#contact{
+  position: relative;
+}
+
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+  opacity: 0.4;
+  background-color: black;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 3px 0px;
+ text-align: center;
+  margin-top: 25px ;
+}
+
+.contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.contact-box input,
+.contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  margin: 15px 0px;
+
+}
+
+.contact-box form{
+  width: 20%;
+}
+
+.contact-box label{
+  font-size: 1.2rem;
+  
+}
+
+#contact h1{
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 24px 0px;
+}
+
+.submit{
+  text-align: center;
+  justify-content: center;
+  width: 4cm;
+  padding: 6px;
+  margin: 25px 0px;
+  background-color: white;
+  
+}
+
+.submit:hover{
+  color: grey;
+  cursor: pointer;
+}
